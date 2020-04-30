@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-captcha" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-migration" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-worker" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-mongo" />
+      <path value="$PROJECT_DIR$/vendor/workerman/workerman" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-oracle" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-queue" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-image" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1amdq0fP70gdQOPVCSqdBehruMT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="net.intellij.plugins.sexyeditor.SexyEditorConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\phpstudy\WWW\thinkphp5\application\api\controller" />
+      <recent name="E:\phpstudy\WWW\thinkphp5\application\api\controller\v1" />
+      <recent name="E:\phpstudy\WWW\thinkphp5\application\admin\view\index" />
+      <recent name="E:\phpstudy\WWW\thinkphp5\application\admin\view" />
+      <recent name="E:\phpstudy\WWW\thinkphp5\application\index\view\index" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\phpstudy\WWW\thinkphp5\application\admin\view" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="console" />
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.Jwt.php">
+    <configuration name="Index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/admin/controller/Index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="Jwt.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Script.Index.php" />
+      <item itemvalue="PHP Script.Jwt.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.Jwt.php" />
+        <item itemvalue="PHP Script.Index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="" />
+      <created>1587187212801</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587187212801</updated>
+      <workItem from="1587187214393" duration="10512000" />
+      <workItem from="1587270873774" duration="6811000" />
+      <workItem from="1587290304291" duration="3119000" />
+      <workItem from="1587344891400" duration="1412000" />
+      <workItem from="1587346338213" duration="21000" />
+      <workItem from="1587347348220" duration="4371000" />
+      <workItem from="1587432153770" duration="9727000" />
+      <workItem from="1587449362061" duration="3179000" />
+      <workItem from="1587454365358" duration="4543000" />
+      <workItem from="1587517425097" duration="79000" />
+      <workItem from="1587541391452" duration="3133000" />
+      <workItem from="1587711037863" duration="4081000" />
+      <workItem from="1587717043726" duration="165000" />
+      <workItem from="1587717311670" duration="4807000" />
+      <workItem from="1587863105598" duration="12634000" />
+      <workItem from="1587949247635" duration="22894000" />
+      <workItem from="1588036385954" duration="10695000" />
+      <workItem from="1588054119581" duration="104000" />
+      <workItem from="1588054259516" duration="159000" />
+      <workItem from="1588054470211" duration="43000" />
+      <workItem from="1588054519869" duration="13937000" />
+      <workItem from="1588122274386" duration="9469000" />
+      <workItem from="1588140312957" duration="418000" />
+      <workItem from="1588144128728" duration="639000" />
+      <workItem from="1588144958547" duration="8954000" />
+      <workItem from="1588209398873" duration="4127000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="60" y="174" key="#CLI_Interpreters" timestamp="1587716942693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="60" y="174" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1587716942693" />
+    <state x="176" y="199" key="#Index.php" timestamp="1587716952648">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="176" y="199" key="#Index.php/0.0.1920.1040@0.0.1920.1040" timestamp="1587716952648" />
+    <state x="162" y="161" key="#PHP" timestamp="1587716949680">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="162" y="161" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1587716949680" />
+    <state x="513" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588054309314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="513" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588054309314" />
+    <state x="228" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587714166336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="228" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587714166336" />
+    <state x="259" y="223" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1587716909095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="259" y="223" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587716909095" />
+    <state x="1241" y="199" key="#com.intellij.ide.util.MemberChooser" timestamp="1588056118328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1241" y="199" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588056118328" />
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588148818008">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1170" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588042621145" />
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588148818008" />
+    <state x="239" y="400" key="ComposerInitDialogKey" timestamp="1587717333680">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="239" y="400" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1587717333680" />
+    <state x="100" y="100" width="760" height="841" key="DiffContextDialog" timestamp="1587717032269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="100" width="760" height="841" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587717032269" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1588147014080">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587863726322" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1588147014080" />
+    <state width="900" height="271" key="GridCell.Tab.0.bottom" timestamp="1588054115661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588054115661" />
+    <state width="900" height="271" key="GridCell.Tab.0.center" timestamp="1588054115661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588054115661" />
+    <state width="900" height="271" key="GridCell.Tab.0.left" timestamp="1588054115661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588054115660" />
+    <state width="900" height="271" key="GridCell.Tab.0.right" timestamp="1588054115661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588054115661" />
+    <state x="1020" y="263" key="IDE.errors.dialog" timestamp="1588209463149">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1020" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588209463149" />
+    <state x="1150" y="220" key="NewPhpClassDialog" timestamp="1588148797852">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1247" y="255" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588140672402" />
+    <state x="1150" y="220" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588148797852" />
+    <state x="296" y="442" key="NewPhpFileDialog" timestamp="1587978654878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="296" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587978654878" />
+    <state x="511" y="192" key="SettingsEditor" timestamp="1588145409495">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587517505725" />
+    <state x="511" y="192" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588145409495" />
+    <state x="136" y="235" width="672" height="677" key="run.anything.popup" timestamp="1588067778503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="136" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588067778503" />
+    <state x="143" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1588056394876">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588056394876" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/../../../360极速浏览器下载/fastadmin/thinkphp/library/think/exception/Handle.php</url>
+          <line>83</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
