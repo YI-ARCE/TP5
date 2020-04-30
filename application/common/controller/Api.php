@@ -30,6 +30,10 @@ class Api
      * @var Jwt 实例化
      */
     protected $jtw ;
+//    /**
+//     * @var autologin 判断是否可以自动登录
+//     */
+//    protected $autologin;
 
     /**
      * Api 构造方法
@@ -46,9 +50,18 @@ class Api
      */
 
     protected function _initialize(){
-        if (!Session::get('token')){
-            $this->error('您还没有登录，请先登录!',[],500);
+        if(Request::instance()->controller() && Request::instance()->action()!='login'){
+            if (!Session::get('user_token')){
+                $this->error('您还没有登录，请先登录!',[],500);
+            }
+            if(Session::get('user_token') != input('token')){
+                Log::log(Session::get('user_token'));
+                Log::log(input('user_token'));
+                Session::clear();
+                $this->error('您已经在其它地方登录!',[],501);
+            }
         }
+//        $this->autologin =1;
         $this->auth = Auth::instance();
         $this->jtw = new Jwt();
     }

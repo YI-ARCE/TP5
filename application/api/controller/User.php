@@ -52,11 +52,15 @@ class User extends Api
 
         }
     }
-    public function autologin(){
-        if (Session::has('user_token')){
-            $this->success('您已经登录了！',['data'=>Session::get('user_token')],204);
-        }else{
-            $this->error('还没有登录!',[],405);
-        }
+//    public function autologin(){
+//        if (Session::has('user_token')){
+//            $this->success('您已经登录了！',['data'=>Session::get('user_token')],204);
+//        }else{
+//            $this->error('还没有登录!',[],405);
+//        }
+//    }
+    public function logout(){
+        Session::clear();
+        $this->success('账户已退出！',[],210);
     }
 }

@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="" />
+    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/module/Encryption.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Encryption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/module/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/module/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Rule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/202004/30.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/202004/30.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +53,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
@@ -36,12 +72,14 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1amdq0fP70gdQOPVCSqdBehruMT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -125,12 +163,23 @@
       <workItem from="1588140312957" duration="418000" />
       <workItem from="1588144128728" duration="639000" />
       <workItem from="1588144958547" duration="8954000" />
-      <workItem from="1588209398873" duration="4127000" />
+      <workItem from="1588209398873" duration="23034000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="60" y="174" key="#CLI_Interpreters" timestamp="1587716942693">
@@ -174,11 +223,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="760" height="841" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587717032269" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1588147014080">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1588231936726">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587863726322" />
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1588147014080" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1588231936726" />
     <state width="900" height="271" key="GridCell.Tab.0.bottom" timestamp="1588054115661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -199,11 +248,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1020" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588209463149" />
-    <state x="1150" y="220" key="NewPhpClassDialog" timestamp="1588148797852">
+    <state x="435" y="329" key="NewPhpClassDialog" timestamp="1588233444273">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1247" y="255" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588140672402" />
-    <state x="1150" y="220" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588148797852" />
+    <state x="435" y="329" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588233444273" />
     <state x="296" y="442" key="NewPhpFileDialog" timestamp="1587978654878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -213,10 +262,11 @@
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587517505725" />
     <state x="511" y="192" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588145409495" />
-    <state x="136" y="235" width="672" height="677" key="run.anything.popup" timestamp="1588067778503">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="136" y="237" width="672" height="684" key="run.anything.popup" timestamp="1588216160160">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="136" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588067778503" />
+    <state x="136" y="237" width="672" height="684" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588216160160" />
     <state x="143" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1588056394876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

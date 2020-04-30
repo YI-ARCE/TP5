@@ -17,7 +17,6 @@ class Rule extends Model
         $set = Rule::get(['id'=>$rule]);
         $setid = $set->data['au_features'];
         self::$features = Menu::getmenu($setid);
-        Log::log(self::$features);
         return self::$features;
     }
 }

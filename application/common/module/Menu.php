@@ -13,7 +13,6 @@ class Menu extends Model
     private static $features = [];
     public static function getmenu($data){
         if($data == '*'){
-            Log::log('走的这里');
             return Menu::all();
         }else{
             $set = explode(',',$data);
