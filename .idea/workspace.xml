@@ -24,42 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="2020-5-6-14:33">
-      <change afterPath="$PROJECT_DIR$/application/api/module/fc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/extra/code.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/log/202005/06.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/adminloginlog.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Demo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/ceshi/common.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/ceshi/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/ceshi/controller/Index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/controller/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/controller/Backend.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/library/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/library/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/module/Devicelog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Devicelog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/module/Encryption.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Encryption.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/module/Jwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Jwt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/module/Loginlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Loginlog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/module/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/module/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Rule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/module/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/extra/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/tags.php" afterDir="false" />
-    </list>
+    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="2020-5-6-14:33" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,8 +160,16 @@
       <workItem from="1588726724865" duration="3434000" />
       <workItem from="1588731975015" duration="1666000" />
       <workItem from="1588733670733" duration="63000" />
-      <workItem from="1588733741832" duration="14596000" />
+      <workItem from="1588733741832" duration="14946000" />
     </task>
+    <task id="LOCAL-00001" summary="2020-5-6-14:33">
+      <created>1588757377335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588757377335</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
