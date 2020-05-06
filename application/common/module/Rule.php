@@ -6,10 +6,13 @@ namespace app\common\module;
 
 use think\Log;
 use think\Model;
-use think\Session;
 
 class Rule extends Model
 {
+    /**
+     * 权限表模型
+     * @var string
+     */
     protected $table = 'sys_auth';
     private static $features = [];
     public static function rule($data){

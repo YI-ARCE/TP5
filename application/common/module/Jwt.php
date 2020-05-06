@@ -8,15 +8,20 @@ use think\Log;
 
 class Jwt {
 
-    //头部
+    /**
+     * JWT加密头部
+     * @var array
+     */
     private static $header=array(
         'alg'=>'HS256', //生成signature的算法
         'typ'=>'JWT'    //类型
     );
 
-    //使用HMAC生成信息摘要时所使用的密钥
+    /**
+     * 使用HMAC生成信息摘要时所使用的密钥
+     * @var string
+     */
     private static $key='y1c5w7l0';
-
 
     /**
      * 获取jwt token
@@ -43,7 +48,6 @@ class Jwt {
             return false;
         }
     }
-
 
     /**
      * 验证token是否有效,默认验证exp,nbf,iat时间
@@ -80,9 +84,6 @@ class Jwt {
 
         return $payload;
     }
-
-
-
 
     /**
      * base64UrlEncode   https://jwt.io/  中base64UrlEncode编码实现

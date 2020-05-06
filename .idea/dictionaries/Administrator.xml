@@ -4,6 +4,7 @@
       <w>devicecheck</w>
       <w>devicelog</w>
       <w>loginlog</w>
+      <w>setcd</w>
       <w>userinfo</w>
     </words>
   </dictionary>

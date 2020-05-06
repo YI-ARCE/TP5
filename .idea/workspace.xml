@@ -24,16 +24,41 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="2020-5-6-14:33">
+      <change afterPath="$PROJECT_DIR$/application/api/module/fc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/extra/code.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/log/202005/06.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/adminloginlog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Demo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/ceshi/common.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/ceshi/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/ceshi/controller/Index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/common/controller/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/Backend.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/library/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/library/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/module/Devicelog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Devicelog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/common/module/Encryption.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Encryption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/module/Jwt.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Jwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/module/Loginlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Loginlog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/common/module/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/common/module/Rule.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/Rule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/202004/30.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/202004/30.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/module/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/module/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/extra/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/tags.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +97,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1amdq0fP70gdQOPVCSqdBehruMT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -164,6 +192,10 @@
       <workItem from="1588144128728" duration="639000" />
       <workItem from="1588144958547" duration="8954000" />
       <workItem from="1588209398873" duration="23034000" />
+      <workItem from="1588726724865" duration="3434000" />
+      <workItem from="1588731975015" duration="1666000" />
+      <workItem from="1588733670733" duration="63000" />
+      <workItem from="1588733741832" duration="14596000" />
     </task>
     <servers />
   </component>
@@ -180,6 +212,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="2020-5-6-14:33" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-5-6-14:33" />
   </component>
   <component name="WindowStateProjectService">
     <state x="60" y="174" key="#CLI_Interpreters" timestamp="1587716942693">
@@ -210,11 +248,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1241" y="199" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588056118328" />
-    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588148818008">
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588727353262">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588042621145" />
-    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588148818008" />
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588727353262" />
     <state x="239" y="400" key="ComposerInitDialogKey" timestamp="1587717333680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -248,29 +286,35 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1020" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588209463149" />
-    <state x="435" y="329" key="NewPhpClassDialog" timestamp="1588233444273">
+    <state x="435" y="329" key="NewPhpClassDialog" timestamp="1588734013481">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1247" y="255" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588140672402" />
-    <state x="435" y="329" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588233444273" />
-    <state x="296" y="442" key="NewPhpFileDialog" timestamp="1587978654878">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="435" y="329" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588734013481" />
+    <state x="296" y="446" key="NewPhpFileDialog" timestamp="1588728921967">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="296" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587978654878" />
-    <state x="511" y="192" key="SettingsEditor" timestamp="1588145409495">
+    <state x="296" y="446" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588728921967" />
+    <state x="718" y="224" width="997" height="711" key="SettingsEditor" timestamp="1588733845298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587517505725" />
-    <state x="511" y="192" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588145409495" />
-    <state x="136" y="237" width="672" height="684" key="run.anything.popup" timestamp="1588216160160">
+    <state x="718" y="224" width="997" height="711" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588733845298" />
+    <state x="1034" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588726999690">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1034" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588726999690" />
+    <state x="136" y="237" width="672" height="684" key="run.anything.popup" timestamp="1588750065898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="136" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588067778503" />
-    <state x="136" y="237" width="672" height="684" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588216160160" />
-    <state x="143" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1588056394876">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="136" y="237" width="672" height="684" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588750065898" />
+    <state x="143" y="231" width="672" height="685" key="search.everywhere.popup" timestamp="1588737548532">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="143" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588056394876" />
+    <state x="143" y="231" width="672" height="685" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588737548532" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

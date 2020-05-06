@@ -4,22 +4,50 @@
 namespace app\common\library;
 
 
-use app\common\module\Devicelog;
+use app\common\module\Loginlog;
 use app\common\module\User;
 use app\common\module\Encryption;
 use think\Config;
-use think\Log;
 use think\Request;
 use think\Validate;
 
 class Auth
 {
+
+    /**
+     * AUTH初始化
+     * @var null
+     */
     protected static $instance = null;
+
+    /**
+     * API配置信息
+     * @var array
+     */
     protected $config = [];
+
+    /**
+     * 用户名暂存
+     * @var string
+     */
     protected $username = '';
+
+    /**
+     * 用户盐值信息
+     * @var string
+     */
     protected $field = '';
+
+    /**
+     * 用户信息暂存
+     * @var array
+     */
     protected $userinfo = [];
 
+    /**
+     * Auth 构造方法
+     * @param array $options
+     */
     public function __construct($options = [])
     {
         if ($config = Config::get('user')) {
@@ -29,7 +57,7 @@ class Auth
     }
 
     /**
-     *
+     * 初始化
      * @param array $options 参数
      * @return Auth
      */
@@ -42,9 +70,10 @@ class Auth
     }
 
     /**
+     * 用户登录
      * @param $username
      * @param $password
-     * @return array|bool
+     * @return array
      * @throws \think\exception\DbException
      */
     public function login($username, $password)
@@ -83,7 +112,6 @@ class Auth
                     case 1:
                         $result['code'] = 201;
                         $result['msg'] = '登录成功';
-
                         break;
                     case 2:
                         $result['code'] = 202;
@@ -100,7 +128,7 @@ class Auth
                 $result['code'] = 401;
                 $result['bool'] = false;
                 unset($this->userinfo['user_password']);
-                $result['data'] = $this->userinfo;
+                $result['data'] = [];
                 $result['msg'] = '用户名或密码不正确请重新输入！';
             }
         } else {
@@ -110,31 +138,29 @@ class Auth
             $result['data'] = ' ';
             $result['msg'] = $validate->getError();
         }
+        if($result['code']==201||$result['code']==203){
+            Loginlog::loginlog(['user_id'=>$result['data']['user_id'],
+                'lg_ip'=>Request::instance()->ip(),'lg_status'=>$result['code'],
+                'lg_addData'=>time(),
+                'lg_device'=>'ceshishebei']);
+        }
         return $result;
     }
 
-    
-
-
-
-
-
-
-
-    public function devicecheck($data){
-       $result = Devicelog::check($data);
-       $code = 1;
-       switch ($result){
-           case 1:
-               $code = 204;
-               break;
-           case 2:
-               $code = 405;
-               break;
-           case 3:
-               $code = 406;
-               break;
-       }
-       return $code;
-    }
+//    public function devicecheck($data){
+//       $result = Devicelog::check($data);
+//       $code = 1;
+//       switch ($result){
+//           case 1:
+//               $code = 204;
+//               break;
+//           case 2:
+//               $code = 405;
+//               break;
+//           case 3:
+//               $code = 406;
+//               break;
+//       }
+//       return $code;
+//    }
 }
