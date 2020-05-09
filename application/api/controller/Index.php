@@ -1,10 +1,13 @@
 <?php
 namespace app\api\controller;
 
-use app\api\module\fc;
+use app\api\module\indexModule;
 use app\common\controller\Api;
+use app\common\library\Sundry;
 use app\common\module\Rule;
+use Exception;
 use think\Config;
+use think\Db;
 use think\Log;
 use think\Session;
 
@@ -19,20 +22,18 @@ class Index extends Api
     public function index()
     {
         $config = Config::get('config');
-        Log::log($config);
-        $this->success('api连接成功',$config);
+        $this->success('api连接成功',200,$config);
         return 0;
     }
 
     /**
      * 主页菜单
-     * @return mixed
      */
     public function home()
     {
         $set = Rule::rule(Session::get('userinfo')['user_authId']);
-        $this->ruleSet = fc::getMenuset($set);
-        $this->success('查询成功!',Session::get('user_token'),201,$this->ruleSet);
+        $this->ruleSet = indexModule::getMenuset($set);
+        $this->success('查询成功!',201,$this->ruleSet);
     }
 
     /**
@@ -46,32 +47,69 @@ class Index extends Api
      * 常规管理
      * @param string $find 获得指定方法
      * @param string $feature 获得指定执行功能
-     * @return bool|string
+     * @throws Exception
      */
     public function regular($find,$feature = null){
         switch ($find){
             case 'userinfo':
                 if ($feature == null){
-                    $this->success('响应成功',null,200,$this->jtw->getToken(['data'=>Session::get('user_info')]));
+                    $this->success('响应成功',200,$this->jtw->getToken(['data'=>Session::get('user_info')]));
                 }else{
-                    $res = fc::getUserinfo($feature,input('data/a'));
-                    $this->success($res,Session::get('user_token'),202);
+                    if(request()->file('image')){
+                        $res = indexModule::editUserinfo($feature,null);
+                    }else{
+                        $res = indexModule::editUserinfo($feature,input('data/a'));
+                    }
+                    $this->success($res,201);
                 }
                 break;
-            case 'ordercheck':
-                return '订单查看';
-            case 'usermanage':
-                return '用户管理';
             default:
-                return view('error');
+                $this->success('不存在的功能模块',201);
         }
-
     }
 
     /**
      * 系统管理
+     * @param $find
+     * @param null $feature
      */
-    public function system(){
-
+    public function system($find,$feature = null){
+        switch ($find){
+            case 'admin':
+                if($feature == null){
+                    $page = input('pagenum');
+                    $number = input('pagesize');
+                    $query = input('queryForm/a');
+                    $key = array_keys($query);
+                    $sql = 'user_status != 4';
+                    for($num = 0;$num<count($key);$num++){
+                        if($key[$num] != 'user_addData'){
+                            $sql = $sql.' and '.$key[$num].' like "%'.$query[$key[$num]].'%"';
+                        }
+                    }
+                    $data = Db::table('sys_user')->where($sql)->field('user_id,user_name,user_authId,user_phone,user_email,user_status')->select();
+                    if($data != []){
+                        $this->success('查询成功!',201,$data,count($data));
+                    }else{
+                        $this->success('没有找到对应条件的用户!',201,[],count($data));
+                    }
+                }else{
+                    $res = indexModule::editadmin($feature);
+                    if($res['type'] == 'ok'){
+                        $this->success($res['msg'],201,$res['data']);
+                    }else{
+                        $this->error($res['msg']);
+                    }
+                }
+                break;
+            case 'adminaction':
+                $this->success('管理员操作日志',201);
+                break;
+            case 'adminlogin':
+                $page = input('pagenum');
+                $number = input('pagesize');
+                $data = $this->loginlog->limit((($page-1)*$number),10)->select();
+                $this->success('管理员日志列表',201,$data,count($data));
+        }
     }
 }

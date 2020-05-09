@@ -78,6 +78,7 @@ class Auth
      */
     public function login($username, $password)
     {
+        //验证器规则
         $rule = [
             'user_name' => 'require|alphaDash|length:6,11',
             'user_password' => 'require|length:6,18'
@@ -90,6 +91,7 @@ class Auth
             'user_name' => $username,
             'user_password' => $password,
         ];
+        //实例化验证器
         $validate = new Validate($rule, $message);
         $result = $validate->check($data);
         if ($result) {
@@ -102,6 +104,7 @@ class Auth
                 $result['msg'] = '用户名或密码不正确请重新输入！';
                 return $result;
             }
+            //密码加密判断
             $this->field = Encryption::enc($password, $this->userinfo['user_salt']);
             $result = [];
             if ($this->field == $this->userinfo['user_password']) {
@@ -119,7 +122,11 @@ class Auth
                         break;
                     case 3:
                         $result['code'] = 203;
-                        $result['msg'] = '第一次登录，请先完善个人信息';
+                        $result['msg'] = '第一次登录，请先完善个人信息!';
+                        break;
+                    case 4:
+                        $result['code'] = 500;
+                        $result['msg'] = '用户名或密码不正确请重新输入!';
                         break;
                 }
 
@@ -135,7 +142,7 @@ class Auth
             $result = [];
             $result['code'] = 400;
             $result['bool'] = false;
-            $result['data'] = ' ';
+            $result['data'] = null;
             $result['msg'] = $validate->getError();
         }
         if($result['code']==201||$result['code']==203){

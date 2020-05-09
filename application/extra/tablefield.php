@@ -1,0 +1,51 @@
+<?php
+
+return[
+    'sys_user'=>[
+        'user_id'=>'u.user_id',
+        'user_name'=>'u.user_name',
+        'user_password'=>'u.user_password',
+        'user_salt'=>'u.user_salt',
+        'user_token'=>'u.user_token',
+        'user_authId'=>'u.user_authId',
+        'user_number'=>'u.user_number',
+        'user_realname'=>'u.user_realname',
+        'user_phone'=>'u.user_phone',
+        'user_email'=>'u.user_email',
+        'user_head'=>'u.user_head',
+        'user_sex'=>'u.user_head',
+        'user_status'=>'u.user_status',
+    ],
+    'sys_auth'=>[
+        'id'=>'a.id',
+        'au_pid'=>'a.au_pid',
+        'au_name'=>'a.au_name',
+        'au_features'=>'a.au_features',
+        'au_addData'=>'a.au_addData',
+        'au_addUser'=>'a.au_addUser',
+        'au_editData'=>'a.au_editData',
+        'au_editUser'=>'a.au_edit_User',
+        'au_status'=>'a.au_status',
+    ],
+    'sys_menu'=>[
+        'menu_id'=>'m.menu_id',
+        'menu_type'=>'m.menu_type',
+        'menu_pid'=>'m.menu_pid',
+        'menu_upid'=>'m.menu_upid',
+        'menu_name'=>'m.menu_name',
+        'menu_path'=>'m.remark',
+        'menu_status'=>'m.menu_status',
+        'menu_addData'=>'m.menu_addData',
+        'menu_addAdmin'=>'m.menu_addAdmin',
+        'menu_editData'=>'m.menu_editData',
+        'menu_editAdmin'=>'m.menu_editAdmin',
+    ],
+    'sys_user_login'=>[
+        'lg_id' => 'l.lg_id',
+        'user_id'=>'l.user_id',
+        'lg_ip'=>'l.lg_ip',
+        'lg_status'=>'l.lg_status',
+        'lg_addData'=>'l.lg_addData',
+        'lg_device'=>'l.lg_device',
+    ]
+];

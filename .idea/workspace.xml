@@ -20,11 +20,29 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="2020-5-6-14:33" />
+    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="2020-5-6-17:34">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/module/indexModule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/library/Sundry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/extra/tablefield.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/userimage/yiarce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/log/202005/09.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/module/fc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/library/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/extra/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/202004/30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/202005/06.log" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +53,11 @@
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" />
     </execution>
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="b085abf9-c2ef-44f5-b42e-8f70328bd849" value="Yellow" />
+    </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,6 +94,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -160,7 +184,11 @@
       <workItem from="1588726724865" duration="3434000" />
       <workItem from="1588731975015" duration="1666000" />
       <workItem from="1588733670733" duration="63000" />
-      <workItem from="1588733741832" duration="14946000" />
+      <workItem from="1588733741832" duration="15465000" />
+      <workItem from="1588757990801" duration="3123000" />
+      <workItem from="1588813285802" duration="21750000" />
+      <workItem from="1588899660600" duration="29803000" />
+      <workItem from="1588985894423" duration="18260000" />
     </task>
     <task id="LOCAL-00001" summary="2020-5-6-14:33">
       <created>1588757377335</created>
@@ -169,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588757377335</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2020-5-6-17:34">
+      <created>1588757677841</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588757677841</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +215,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -190,7 +237,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="2020-5-6-14:33" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020-5-6-14:33" />
+    <MESSAGE value="2020-5-6-17:34" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-5-6-17:34" />
   </component>
   <component name="WindowStateProjectService">
     <state x="60" y="174" key="#CLI_Interpreters" timestamp="1587716942693">
@@ -205,10 +253,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="162" y="161" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1587716949680" />
-    <state x="513" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588054309314">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="250" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588994407656">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="513" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588054309314" />
+    <state x="250" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588994407656" />
     <state x="228" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587714166336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,15 +266,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="259" y="223" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587716909095" />
-    <state x="1241" y="199" key="#com.intellij.ide.util.MemberChooser" timestamp="1588056118328">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1241" y="201" key="#com.intellij.ide.util.MemberChooser" timestamp="1588834416785">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1241" y="199" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588056118328" />
-    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588727353262">
+    <state x="1241" y="201" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1588834416785" />
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588995354990">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588042621145" />
-    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588727353262" />
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588995354990" />
     <state x="239" y="400" key="ComposerInitDialogKey" timestamp="1587717333680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -255,25 +305,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="900" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588054115661" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1588993419074">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1050@0.0.1920.1050" timestamp="1588993419074" />
     <state x="1020" y="263" key="IDE.errors.dialog" timestamp="1588209463149">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1020" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588209463149" />
-    <state x="435" y="329" key="NewPhpClassDialog" timestamp="1588734013481">
+    <state x="435" y="329" key="NewPhpClassDialog" timestamp="1588930081278">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1247" y="255" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588140672402" />
-    <state x="435" y="329" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588734013481" />
+    <state x="435" y="329" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588930081278" />
     <state x="296" y="446" key="NewPhpFileDialog" timestamp="1588728921967">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="296" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587978654878" />
     <state x="296" y="446" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588728921967" />
-    <state x="718" y="224" width="997" height="711" key="SettingsEditor" timestamp="1588733845298">
+    <state x="552" y="282" width="997" height="708" key="SettingsEditor" timestamp="1588813448279">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587517505725" />
-    <state x="718" y="224" width="997" height="711" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588733845298" />
+    <state x="552" y="282" width="997" height="708" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588813448279" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1588757710642">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1588757710642" />
     <state x="1034" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588726999690">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -283,11 +341,11 @@
     </state>
     <state x="136" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588067778503" />
     <state x="136" y="237" width="672" height="684" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588750065898" />
-    <state x="143" y="231" width="672" height="685" key="search.everywhere.popup" timestamp="1588737548532">
+    <state x="143" y="231" width="672" height="685" key="search.everywhere.popup" timestamp="1588909753500">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="143" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588056394876" />
-    <state x="143" y="231" width="672" height="685" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588737548532" />
+    <state x="143" y="231" width="672" height="685" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588909753500" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
