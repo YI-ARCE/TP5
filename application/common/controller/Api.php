@@ -93,9 +93,6 @@ class Api
             'data' => $info,
             'total'=> $number,
         ];
-        if($number == 0){
-            unset($result['total']);
-        };
         $type = 'json';
         $response = Response::create($result, $type);
         throw new HttpResponseException($response);
@@ -117,8 +114,9 @@ class Api
      * 获得失败处理后的数据
      * @param string $msg 返回的信息
      * @param int $code 返回的状态
+     * @param array $data
      */
-    protected function error($msg,$code = 500){
-        $this->result($msg,$code);
+    protected function error($msg,$code = 500,$data=[]){
+        $this->result($msg,$code,$data);
     }
 }

@@ -8,6 +8,7 @@ use app\common\module\Loginlog;
 use app\common\module\User;
 use app\common\module\Encryption;
 use think\Config;
+use think\Log;
 use think\Request;
 use think\Validate;
 

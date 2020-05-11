@@ -87,9 +87,9 @@ class Index extends Api
                             $sql = $sql.' and '.$key[$num].' like "%'.$query[$key[$num]].'%"';
                         }
                     }
-                    $data = Db::table('sys_user')->where($sql)->field('user_id,user_name,user_authId,user_phone,user_email,user_status')->select();
+                    $data = Db::table('sys_user')->alias('u')->join('sys_auth a','u.user_authId = a.id')->where($sql)->field('user_id,user_name,user_authId,user_phone,user_email,user_addData,user_status,au_name')->limit(($page-1)*10,$number)->select();
                     if($data != []){
-                        $this->success('查询成功!',201,$data,count($data));
+                        $this->success('查询成功!',201,$data,Db::table('sys_user')->where('user_status != 4')->count());
                     }else{
                         $this->success('没有找到对应条件的用户!',201,[],count($data));
                     }
@@ -103,13 +103,21 @@ class Index extends Api
                 }
                 break;
             case 'adminaction':
-                $this->success('管理员操作日志',201);
+                $this->success('管理员操作日志',201,[],0);
                 break;
             case 'adminlogin':
                 $page = input('pagenum');
                 $number = input('pagesize');
-                $data = $this->loginlog->limit((($page-1)*$number),10)->select();
-                $this->success('管理员日志列表',201,$data,count($data));
+                $query = input('queryForm/a');
+                $key = array_keys($query);
+                $sql = '';
+                for($num = 0;$num<count($key);$num++){
+                    if($key[$num] != 'user_addData'){
+                        $sql = $sql.' and '.$key[$num].' like "%'.$query[$key[$num]].'%"';
+                    }
+                }
+                $data = Db::table('sys_user_login')->alias('l')->join('sys_user u','l.user_id = u.user_id')->where($sql)->field('user_name,lg_status,lg_addData,lg_device')->limit(($page-1)*10,$number)->select();
+                $this->success('管理员日志列表',201,$data,Db::table('sys_user_login')->count());
         }
     }
 }

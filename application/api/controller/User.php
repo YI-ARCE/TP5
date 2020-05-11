@@ -3,6 +3,7 @@
 namespace app\api\controller;
 
 use app\common\controller\Api;
+use think\Log;
 use think\Request;
 use think\Session;
 
@@ -29,7 +30,9 @@ class User extends Api
                 $token = $this->jtw->getToken(['data'=>$result['data']['user_name'],'iat'=>time(),'exp'=>time()+60,'nbf'=>time()]);
                 Session::set('userinfo',$result['data']);
                 Session::set('user_token',$token);
-                return ['code'=>201, 'time'=>time(),'msg'=>$result['msg'],'token'=>$token, 'data'=>['user_name'=>$result['data']['user_name']],];
+                return ['code'=>201, 'time'=>time(),'msg'=>$result['msg'],'token'=>$token, 'data'=>['user_name'=>$result['data']['user_name']]];
+            }else{
+                return ['code'=>$result['code'], 'time'=>time(),'msg'=>$result['msg']];
             }
         }else{
             $this->error($result['msg'],$result['code']);
