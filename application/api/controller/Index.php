@@ -70,17 +70,21 @@ class Index extends Api
 
     /**
      * 系统管理
-     * @param $find
-     * @param null $feature
+     * @param string $find 功能地址
+     * @param null $feature 二级功能地址
      */
     public function system($find,$feature = null){
+        $page = input('pagenum');
+        $number = input('pagesize');
+        $query = input('queryForm/a');
+        if ($query != null) {
+            $key = array_keys($query);
+        }else{
+            $key = [];
+        }
         switch ($find){
             case 'admin':
                 if($feature == null){
-                    $page = input('pagenum');
-                    $number = input('pagesize');
-                    $query = input('queryForm/a');
-                    $key = array_keys($query);
                     $sql = 'user_status != 4';
                     for($num = 0;$num<count($key);$num++){
                         if($key[$num] != 'user_addData'){
@@ -94,30 +98,37 @@ class Index extends Api
                         $this->success('没有找到对应条件的用户!',201,[],count($data));
                     }
                 }else{
-                    $res = indexModule::editadmin($feature);
+                    $res = indexModule::admin($feature);
                     if($res['type'] == 'ok'){
+                        if(array_key_exists('logdata',$res)){
+                            $this->success($res['msg'],201,$res['data'],0,$res['logdata']);
+                        }
                         $this->success($res['msg'],201,$res['data']);
                     }else{
                         $this->error($res['msg']);
                     }
                 }
                 break;
-            case 'adminaction':
-                $this->success('管理员操作日志',201,[],0);
-                break;
-            case 'adminlogin':
-                $page = input('pagenum');
-                $number = input('pagesize');
-                $query = input('queryForm/a');
-                $key = array_keys($query);
-                $sql = '';
+            case 'adminactionlog':
+                $sql = '1 = 1';
                 for($num = 0;$num<count($key);$num++){
                     if($key[$num] != 'user_addData'){
                         $sql = $sql.' and '.$key[$num].' like "%'.$query[$key[$num]].'%"';
                     }
                 }
-                $data = Db::table('sys_user_login')->alias('l')->join('sys_user u','l.user_id = u.user_id')->where($sql)->field('user_name,lg_status,lg_addData,lg_device')->limit(($page-1)*10,$number)->select();
+                $data = Db::table('sys_action')->alias('c')->join('sys_user u','c.user_id = u.user_id')->join('sys_menu m','c.menu_id = m.menu_id')->where($sql)->field('user_name,menu_name,ac_data,ac_uri,ac_editData')->limit(($page-1)*10,$number)->select();
+                $this->success('管理员操作日志列表',201,$data,Db::table('sys_action')->count());
+                break;
+            case 'adminloginlog':
+                $sql = '1 = 1';
+                for($num = 0;$num<count($key);$num++){
+                    if($key[$num] != 'user_addData'){
+                        $sql = $sql.' and '.$key[$num].' like "%'.$query[$key[$num]].'%"';
+                    }
+                }
+                $data = Db::table('sys_user_login')->alias('l')->join('sys_user u','l.user_id = u.user_id')->where($sql)->field('user_name,lg_status,lg_addData,lg_device,lg_ip')->limit(($page-1)*10,$number)->select();
                 $this->success('管理员日志列表',201,$data,Db::table('sys_user_login')->count());
+                break;
         }
     }
 }

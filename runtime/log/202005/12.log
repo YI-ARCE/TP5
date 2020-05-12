@@ -1,0 +1,225 @@
+---------------------------------------------------------------
+[ 2020-05-12T11:33:01+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/select
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010566s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_password`,`user_salt`,`user_token`,`user_authId`,`user_number`,`user_realname`,`user_phone`,`user_email`,`user_head`,`user_sex`,`user_addData`,`user_status` FROM `sys_user` WHERE  `user_id` = 1  AND (  user_status !=4 ) [ RunTime:0.000189s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:33:04+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/edit
+[ log ] 修改信息:1yiarce1187590613841036320143@qq.com1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009631s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `user_id`=1,`user_name`='yiarce',`user_authId`=1,`user_phone`='18759061384',`user_email`='1036320143@qq.com',`user_status`=1  WHERE  `user_id` = 1 [ RunTime:0.027650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` WHERE  `menu_path` = '/index/system/find/admin/feature/edit' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] INSERT INTO `sys_action` (`user_id` , `menu_id` , `ac_data` , `ac_uri`) VALUES (2 , 15 , '\"\\u4fee\\u6539\\u4fe1\\u606f:1yiarce1187590613841036320143@qq.com1\"' , '/index/system/find/admin/feature/edit') [ RunTime:0.026938s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:33:04+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009795s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000227s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:33:19+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009974s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000180s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:35:08+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009894s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:35:09+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/select
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011182s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_password`,`user_salt`,`user_token`,`user_authId`,`user_number`,`user_realname`,`user_phone`,`user_email`,`user_head`,`user_sex`,`user_addData`,`user_status` FROM `sys_user` WHERE  `user_id` = 1  AND (  user_status !=4 ) [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:35:17+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/edit
+[ log ] 修改信息:1yiarce1187590614441036320143@qq.com1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010745s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `user_id`=1,`user_name`='yiarce',`user_authId`=1,`user_phone`='18759061444',`user_email`='1036320143@qq.com',`user_status`=1  WHERE  `user_id` = 1 [ RunTime:0.035423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` WHERE  `menu_path` = '/index/system/find/admin/feature/edit' LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] INSERT INTO `sys_action` (`user_id` , `menu_id` , `ac_data` , `ac_uri`) VALUES (2 , 15 , '\"\\u4fee\\u6539\\u4fe1\\u606f:1yiarce1187590614441036320143@qq.com1\"' , '/index/system/find/admin/feature/edit') [ RunTime:0.026732s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:35:17+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010611s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:35:30+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010559s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000108s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:42:42+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010125s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:42:44+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/select
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010537s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_password`,`user_salt`,`user_token`,`user_authId`,`user_number`,`user_realname`,`user_phone`,`user_email`,`user_head`,`user_sex`,`user_addData`,`user_status` FROM `sys_user` WHERE  `user_id` = 1  AND (  user_status !=4 ) [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:42:48+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/edit
+[ log ] 修改信息: user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061433  user_email:1036320143@qq.com  user_status:1 
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009623s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `user_id`=1,`user_name`='yiarce',`user_authId`=1,`user_phone`='18759061433',`user_email`='1036320143@qq.com',`user_status`=1  WHERE  `user_id` = 1 [ RunTime:0.029510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` WHERE  `menu_path` = '/index/system/find/admin/feature/edit' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] INSERT INTO `sys_action` (`user_id` , `menu_id` , `ac_data` , `ac_uri`) VALUES (2 , 15 , '\"\\u4fee\\u6539\\u4fe1\\u606f: user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061433  user_email:1036320143@qq.com  user_status:1 \"' , '/index/system/find/admin/feature/edit') [ RunTime:0.027297s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:42:48+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010382s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000219s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:42:50+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010081s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:13+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010220s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000206s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:14+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/select
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010274s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_password`,`user_salt`,`user_token`,`user_authId`,`user_number`,`user_realname`,`user_phone`,`user_email`,`user_head`,`user_sex`,`user_addData`,`user_status` FROM `sys_user` WHERE  `user_id` = 1  AND (  user_status !=4 ) [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:18+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/edit
+[ log ] editmsg: user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061333  user_email:1036320143@qq.com  user_status:1 
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009904s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `user_id`=1,`user_name`='yiarce',`user_authId`=1,`user_phone`='18759061333',`user_email`='1036320143@qq.com',`user_status`=1  WHERE  `user_id` = 1 [ RunTime:0.025356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.001707s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` WHERE  `menu_path` = '/index/system/find/admin/feature/edit' LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.003356s ]
+[ sql ] [ SQL ] INSERT INTO `sys_action` (`user_id` , `menu_id` , `ac_data` , `ac_uri`) VALUES (2 , 15 , '\"editmsg: user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061333  user_email:1036320143@qq.com  user_status:1 \"' , '/index/system/find/admin/feature/edit') [ RunTime:0.029682s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:18+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010531s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:19+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009981s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000215s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:45+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010207s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:47+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/select
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009849s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_password`,`user_salt`,`user_token`,`user_authId`,`user_number`,`user_realname`,`user_phone`,`user_email`,`user_head`,`user_sex`,`user_addData`,`user_status` FROM `sys_user` WHERE  `user_id` = 1  AND (  user_status !=4 ) [ RunTime:0.000211s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:50+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/edit
+[ log ] editmsg:
+ user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061332  user_email:1036320143@qq.com  user_status:1 
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010306s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `user_id`=1,`user_name`='yiarce',`user_authId`=1,`user_phone`='18759061332',`user_email`='1036320143@qq.com',`user_status`=1  WHERE  `user_id` = 1 [ RunTime:0.026049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` WHERE  `menu_path` = '/index/system/find/admin/feature/edit' LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] INSERT INTO `sys_action` (`user_id` , `menu_id` , `ac_data` , `ac_uri`) VALUES (2 , 15 , '\"editmsg:\\n user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061332  user_email:1036320143@qq.com  user_status:1 \"' , '/index/system/find/admin/feature/edit') [ RunTime:0.027034s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:51+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010824s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:44:51+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010711s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:21+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/home
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011377s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_auth` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_auth` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` [ RunTime:0.000220s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:22+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010799s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.002206s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:22+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010642s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000248s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:24+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/select
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009767s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_password`,`user_salt`,`user_token`,`user_authId`,`user_number`,`user_realname`,`user_phone`,`user_email`,`user_head`,`user_sex`,`user_addData`,`user_status` FROM `sys_user` WHERE  `user_id` = 1  AND (  user_status !=4 ) [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:28+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin/feature/edit
+[ log ] editmsg:<br> user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061322  user_email:1036320143@qq.com  user_status:1 
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009849s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `user_id`=1,`user_name`='yiarce',`user_authId`=1,`user_phone`='18759061322',`user_email`='1036320143@qq.com',`user_status`=1  WHERE  `user_id` = 1 [ RunTime:0.025649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` WHERE  `menu_path` = '/index/system/find/admin/feature/edit' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] INSERT INTO `sys_action` (`user_id` , `menu_id` , `ac_data` , `ac_uri`) VALUES (2 , 15 , '\"editmsg:<br> user_id:1  user_name:yiarce  user_authId:1  user_phone:18759061322  user_email:1036320143@qq.com  user_status:1 \"' , '/index/system/find/admin/feature/edit') [ RunTime:0.026272s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:29+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009684s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:29+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010373s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:41+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/home
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000944s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_auth` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_auth` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_menu` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_menu` [ RunTime:0.000259s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:41+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_name`,`user_authId`,`user_phone`,`user_email`,`user_addData`,`user_status`,`au_name` FROM `sys_user` `u` INNER JOIN `sys_auth` `a` ON `u`.`user_authId`=`a`.`id` WHERE  (  user_status != 4 ) LIMIT 0,10 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` WHERE  (  user_status != 4 ) LIMIT 1 [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2020-05-12T11:45:42+08:00 ] 127.0.0.1 POST 192.168.0.254/api/index/system/find/adminactionlog
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010729s ] mysql:host=127.0.0.1;port=3306;dbname=yc_sys_base;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_action` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT `user_name`,`menu_name`,`ac_data`,`ac_uri`,`ac_editData` FROM `sys_action` `c` INNER JOIN `sys_user` `u` ON `c`.`user_id`=`u`.`user_id` INNER JOIN `sys_menu` `m` ON `c`.`menu_id`=`m`.`menu_id` WHERE  (  1 = 1 ) LIMIT 0,10 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_action` LIMIT 1 [ RunTime:0.000218s ]

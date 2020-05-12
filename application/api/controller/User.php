@@ -15,7 +15,6 @@ class User extends Api
     /**
      * 登录验证
      */
-
     public function login(){
         if (Request::instance()->isPost()==false && Request::instance()->isAjax()==false)
             $this->error('错误的请求方式!',500);

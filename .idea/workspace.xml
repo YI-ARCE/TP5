@@ -6,15 +6,6 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
@@ -25,7 +16,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="2020-5-11 09：48&#10;优化搜索逻辑" />
+    <list default="true" id="c862bdfd-a225-4bbe-b63d-f340f4beb6d1" name="Default Changelist" comment="2020-5-11 09：48&#10;优化搜索逻辑">
+      <change afterPath="$PROJECT_DIR$/application/api/module/adminModule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime/log/202005/12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b085abf9-c2ef-44f5-b42e-8f70328bd849.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b085abf9-c2ef-44f5-b42e-8f70328bd849.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/module/indexModule.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/module/indexModule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/library/Sundry.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/library/Sundry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/202005/11.log" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +52,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
@@ -172,7 +180,11 @@
       <workItem from="1588813285802" duration="21750000" />
       <workItem from="1588899660600" duration="29803000" />
       <workItem from="1588985894423" duration="29986000" />
-      <workItem from="1589158790305" duration="3191000" />
+      <workItem from="1589158790305" duration="11284000" />
+      <workItem from="1589184656606" duration="8360000" />
+      <workItem from="1589245269348" duration="6000" />
+      <workItem from="1589245320815" duration="126000" />
+      <workItem from="1589245463501" duration="9755000" />
     </task>
     <task id="LOCAL-00001" summary="2020-5-6-14:33">
       <created>1588757377335</created>
@@ -209,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589161831092</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2020-5-11 09：48&#10;优化搜索逻辑">
+      <created>1589162147491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589162147491</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,16 +292,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="259" y="223" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587716909095" />
-    <state x="1241" y="201" key="#com.intellij.ide.util.MemberChooser" timestamp="1588834416785">
+    <state x="1241" y="201" key="#com.intellij.ide.util.MemberChooser" timestamp="1589164551909">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1241" y="199" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588056118328" />
-    <state x="1241" y="201" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1588834416785" />
-    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589014223337">
+    <state x="1241" y="201" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589164551909" />
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589246595794">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1170" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588042621145" />
-    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589014223337" />
+    <state x="1170" y="277" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589246595794" />
     <state x="239" y="400" key="ComposerInitDialogKey" timestamp="1587717333680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -321,11 +340,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1020" y="263" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588209463149" />
-    <state x="435" y="329" key="NewPhpClassDialog" timestamp="1588930081278">
+    <state x="611" y="316" key="NewPhpClassDialog" timestamp="1589246152398">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1247" y="255" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588140672402" />
-    <state x="435" y="329" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1588930081278" />
+    <state x="611" y="316" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589246152398" />
     <state x="296" y="446" key="NewPhpFileDialog" timestamp="1588728921967">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -336,10 +355,10 @@
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587517505725" />
     <state x="552" y="282" width="997" height="708" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588813448279" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1589161840495">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1589162182650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589161840495" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589162182650" />
     <state x="1034" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588726999690">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

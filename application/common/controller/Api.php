@@ -3,6 +3,7 @@
 
 namespace app\common\controller;
 use app\common\library\Auth;
+use app\common\library\Sundry;
 use app\common\module\Jwt;
 use app\common\module\Loginlog;
 use app\common\module\User;
@@ -104,9 +105,13 @@ class Api
      * @param int $code 返回的状态
      * @param string $info 返回的用户信息
      * @param int $number 可选
+     * @param string|array $logtype 确定是否要保存日志的类型，null则不保存
      */
-    protected function success($msg = '',$code = 1,$info = '',$number = 0)
+    protected function success($msg = '',$code = 1,$info = '',$number = 0,$logtype = null)
     {
+        if($logtype != null){
+            Sundry::adminActionLog($logtype);
+        }
         $this->result($msg,$code,$info,$number);
     }
 
