@@ -37,16 +37,18 @@ class adminModule
         ];
         $validate = new Validate($rule, $message);
         $val = $validate->check($valdata);
+        $logdata = 'addUser:';
         if ($val){
             $data['user_salt'] = Sundry::random(6);
             $data['user_password'] = Encryption::enc($data['user_password'],$data['user_salt']);
             foreach ($savedata as $key => $val){
                 if(array_key_exists($key,$data)){
                     $savedata[$key] = $data[$key];
+                    $logdata = $logdata.' '.$key.'->'.$data[$key];
                 }
             }
             Log::log($result->save($savedata));
-            return ['msg'=>'添加成功','data'=>null,'type'=>'ok','logdata'=>'添加用户:'.$data['user_name']];
+            return ['msg'=>'添加成功','data'=>null,'type'=>'ok','logdata'=>$logdata];
         }else{
             return ['msg'=>$validate->getError(),'data'=>null,'type'=>'ok'];
         }
@@ -60,16 +62,17 @@ class adminModule
     public static function editUser($data){
         $savedata = Config::get('user');
         $result = new User();
-        $logdata = "";
+        $logdata = "editUser:";
         foreach ($savedata as $key => $val){
             if(array_key_exists($key,$data)){
                 $savedata[$key] = $data[$key];
-                $logdata = $logdata.' '.$key.':'.$data[$key].' ';
+                if($key == 'user_phone'||$key == 'user_email'){
+                    $logdata= $logdata.' '.$key.'->'.$data[$key];
+                }
             }else{
                 unset($savedata[$key]);
             }
         }
-        Log::log($logdata);
         $result->where('user_id',$data['user_id'])->update($savedata);
         return ['msg'=>'修改成功','data'=>null,'type'=>'ok','logdata'=>$logdata];
     }
@@ -82,7 +85,7 @@ class adminModule
     public static function deleteUser($data){
         $result = new User();
         $result->where('user_id',$data['user_id'])->update(['user_status'=>4]);
-        return ['msg'=>'用户已经删除！','data'=>null,'type'=>'ok','logdata'=>$data['user_name']];
+        return ['msg'=>'用户已经删除！','data'=>null,'type'=>'ok','logdata'=>'delete: user_id->'.$data['user_id']];
     }
 
     /**
@@ -117,9 +120,9 @@ class adminModule
         $result = new User();
         $result->where('user_id',$data['user_id'])->update(['user_status'=>$data['user_status']]);
         if($data['user_status'] == 1){
-            return ['msg'=>'用户已启用！','data'=>null,'type'=>'ok','logdata'=>'enable:'.$data['user_name']];
+            return ['msg'=>'用户已启用！','data'=>null,'type'=>'ok','logdata'=>'enable: user_id->'.$data['user_id']];
         }else{
-            return ['msg'=>'用户已禁用！','data'=>null,'type'=>'ok','logdata'=>'disable'.$data['user_name']];
+            return ['msg'=>'用户已禁用！','data'=>null,'type'=>'ok','logdata'=>'disable: user_id->'.$data['user_id']];
         }
     }
 }

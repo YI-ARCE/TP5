@@ -48,7 +48,7 @@ class Sundry
         $db = new Db();
         $userId = Session::get('userinfo')['user_id'];
         $uri = substr(request()->url(),4);
-        Log::key($uri);
+        Log::log($uri);
         $menu_id = $db::table('sys_menu')->where('menu_path',$uri)->find()['menu_id'];
 
         if ($menu_id != null)
